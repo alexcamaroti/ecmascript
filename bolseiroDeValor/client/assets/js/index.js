@@ -14,9 +14,9 @@ document.querySelector(".form").addEventListener('submit', function(event){
 		td.textContent = field.value;
 		tr.appendChild(td);
 	});
-	var tdVolume = document.createElement("td");
-	tdVolume.textContent = fields[1].value * fields[2].value;
-	tr.appendChild(tdVolume);
+	var tdTotal = document.createElement("td");
+	tdTotal.textContent = fields[1].value * fields[2].value;
+	tr.appendChild(tdTotal);
 
 	tbody.appendChild(tr);
 
