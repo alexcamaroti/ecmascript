@@ -1,4 +1,4 @@
-var fields = [
+/*var fields = [
 	document.querySelector("#cDate"),
 	document.querySelector("#cQuantity"),
 	document.querySelector("#cCost")
@@ -8,7 +8,7 @@ var tbody = document.querySelector("table tbody");
 
 document.querySelector(".form").addEventListener('submit', function(event){
 	event.preventDefault();
-	var tr = document.createElement("tr");
+	/*var tr = document.createElement("tr");
 	fields.forEach(function(field){
 		var td = document.createElement("td");
 		td.textContent = field.value;
@@ -20,14 +20,6 @@ document.querySelector(".form").addEventListener('submit', function(event){
 
 	tbody.appendChild(tr);
 
-	cleanFieldsAndFocus(fields);
 });
-
-function cleanFieldsAndFocus(fields) {
-	fields[0].value = '';
-	fields[1].value = 1;
-	fields[2].value = 0;
-	fields[0].focus();
-}
-
+*/
 
