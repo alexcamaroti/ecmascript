@@ -8,14 +8,18 @@ class NegotiationController {
         this._cCost = $("#cCost");
         this._listNegotiations = new ListNegotiation();
         this._negotiationView = new NegotiationView($("#negotiationViewTable"));
+        this._message = new Message();
+        this._messageView = new MessageView($("#messageViewText"));
         this._negotiationView.update(this._listNegotiations);
-        
+        this._messageView.update(this._message);
     }
 
     add(event) {
         event.preventDefault();
         this._listNegotiations.addToList(this._createNegotiation());
         this._negotiationView.update(this._listNegotiations);
+        this._message.text = "Negotiation registered.";
+        this._messageView.update(this._message);
         this._cleanFieldsAndFocusForm();
     }
     

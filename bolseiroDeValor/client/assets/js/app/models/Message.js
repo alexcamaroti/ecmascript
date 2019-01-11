@@ -4,11 +4,11 @@ class Message {
         this._text = text;
     }
 
-    get message() {
+    get text() {
         return this._text;
     }
 
-    set message(text) {
+    set text(text) {
         this._text = text;
     }
 }
